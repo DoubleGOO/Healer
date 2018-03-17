@@ -1,0 +1,82 @@
+<!--
+  Generated template for the AppointmentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar >
+      <ion-title>Appointment</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <div class='tip'>
+      <div>CREATE AN</div>
+      <div>APPOINTMENT.</div>
+    </div>
+    <ion-list>
+
+        <ion-item>
+          <ion-label>Choose Hospital</ion-label>
+          <!-- 后期可用  [(ngModel)]="os" -->
+          <ion-select  >
+            <ion-option>Alice's Hospital</ion-option>
+            <ion-option>Green's Hospital</ion-option>
+            <ion-option>Nirvana's Hospital</ion-option>
+            <ion-option>Jam's Hospital</ion-option>
+            <ion-option>Smashing's Hospital</ion-option>
+            <ion-option>Soundgarden's Hospital</ion-option>
+            <ion-option>Stone's Hospital</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Choose Doctor</ion-label>
+          <ion-select >
+            <ion-option>Alice</ion-option>
+            <ion-option>Green</ion-option>
+            <ion-option>Nirvana</ion-option>
+            <ion-option>Jam</ion-option>
+            <ion-option>Smashing</ion-option>
+            <ion-option>Soundgarden</ion-option>
+            <ion-option>Stone</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Book Time</ion-label>
+          <ion-select [(ngModel)]="date.month">
+              <ion-option *ngFor='let item of monthList'>
+                  {{item}}
+              </ion-option>
+          </ion-select>
+
+          <ion-select [(ngModel)]="date.day">
+              <ion-option *ngFor='let item of dayList'>
+                {{item}}
+              </ion-option>
+          </ion-select>
+        </ion-item>
+
+          <ion-item>
+              <ion-label>Complain</ion-label>
+              <ion-select submitText="Okay" cancelText="Nah">
+                <ion-option>balabala</ion-option>
+                <ion-option>guajiguaji</ion-option>
+                <ion-option>pucidaci</ion-option>
+                <ion-option>xiliguala</ion-option>
+                <ion-option>hahahahaa</ion-option>
+              </ion-select>
+          </ion-item>
+
+      </ion-list>
+
+      <div class='buttonPart'>
+        <button ion-button class='submit mycolor' round>
+          ADD APPOINTMENT
+        </button>
+      </div>
+
+</ion-content>

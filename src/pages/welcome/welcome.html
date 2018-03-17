@@ -1,0 +1,48 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-slides pager>
+    <ion-slide>
+      <span class='skip' (tap)='startApp()'>Skip</span>
+      <img src="assets/imgs/ic_doctor.png" />
+      <div class='text'>
+        <span class='title'>DOCTORS</span>
+        <br>
+        <span class='instruction'>One way to announce or promote</span>
+      </div>
+      <ion-icon class='right' name="ios-arrow-forward-outline" (tap)='goNext(300)'></ion-icon>
+    </ion-slide>
+    <ion-slide>
+      <span class='skip' (tap)='startApp()'>Skip</span>
+      <img src="assets/imgs/ic_drugs.png" />
+      <div class='text'>
+        <span class='title'>DRUGS</span>
+        <br>
+        <span class='instruction'>I know how terrible it can be for you</span>
+      </div>
+      <ion-icon class='left' name="ios-arrow-back-outline" (tap)='goPrev(300)'></ion-icon>
+      <ion-icon class='right' name="ios-arrow-forward-outline" (tap)='goNext(300)'></ion-icon>
+    </ion-slide>
+    <ion-slide pager='false'>
+      <img src="assets/imgs/ic_appoitment.png" />
+      <div class='text'>
+        <span class='title'>APPOINTMENT</span>
+        <br>
+        <span class='instruction'>Kidney stones are very hard mineral</span>
+        <button ion-button round (tap)='startApp()' class='mycolor'> GET STARTED</button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

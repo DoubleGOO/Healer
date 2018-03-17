@@ -1,0 +1,129 @@
+<!--
+  Generated template for the MainServerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar #Menu>
+    <ion-buttons item-start>
+      <button ion-button icon-only menuToggle color="light" >
+        <ion-icon name="ios-menu-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      <img src='assets/imgs/logo_healer.png' />
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="light">
+        <ion-icon name="ios-mail-outline"></ion-icon>
+      </button>
+      <button ion-button icon-only color="light">
+        <ion-icon name="ios-notifications-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div class='text'>
+      <div class='titleOne'>Hello Jonas,</div>
+      <div class='titleTwo'>HOW CAN WE TAKE</div>
+      <div class='titleThree'>CARE YOUSELF?</div>
+    </div>
+
+    <ion-grid class='select'>
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button round class='mycolor' [(navPush)]='FindDoctorPage'>
+            <ion-icon name="ios-people-outline"></ion-icon><br>
+            <div class='item'>Find Doctor</div>
+            <div class='expla'>113 doctors</div>
+          </button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button round class='mycolorGray' [(navPush)]='FindHospitalPage'>
+            <ion-icon name="ios-home-outline"></ion-icon><br>
+            <div class='item'>Find Hospital</div>
+            <div class='expla'>269 hospital</div>
+          </button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button round class='mycolorGray' [(navPush)]='AppointmentPage'>
+            <ion-icon name="ios-calendar-outline"></ion-icon><br>
+            <div class='item'>Appointment</div>
+            <div class='expla'>59 available</div>
+          </button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button round class='mycolorGray'>
+            <ion-icon name="ios-paper-outline"></ion-icon><br>
+            <div class='item'>Price Services</div>
+            <div class='expla'>26 services</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+</ion-content>
+<!-- 右滑动菜单 -->
+<ion-menu [content]="Menu">
+    <ion-header></ion-header>
+    <ion-content>
+      <!-- div header :菜单头部 -->
+      <div class="menu-header">
+          <div class="user-avatar ">
+            <img src="assets/imgs/Oval.png" />
+          </div>
+          <div menuClose class='personData'>
+            <div class="myname">OSCAR BARRETT</div>
+            <div class="balance">Balance:$1,359.00</div>
+          </div>
+          <!-- div menuList：菜单主成分 -->
+          <div class="menu-list">
+            <ion-list no-lines>
+              <button menuClose="left" ion-item>
+                HOME
+              </button>
+              <button menuClose="left" ion-item>
+                DRUGS
+              </button>
+              <button menuClose="left" ion-item>
+                DOCTORS
+              </button>
+              <button menuClose="left" ion-item>
+                SERVICES
+              </button>
+              <button menuClose="left" ion-item>
+                DASHBOARD
+              </button>
+              <button menuClose="left" ion-item>
+                PROFILE
+              </button>
+              <button menuClose="left" ion-item>
+                NEWS HEALTHLY
+              </button>
+            </ion-list>
+          </div>
+        </div>
+    </ion-content>
+
+    <!--footer： 菜单底部 -->
+    <ion-footer>
+      <div class='bottomLeft' >
+        <button ion-button clear>
+          <ion-icon name="ios-settings-outline"></ion-icon>
+          SET
+        </button>
+      </div>
+      <div class='bottomRight' >
+        <button ion-button clear menuClose (click)='exit()'>
+          <ion-icon name="ios-exit-outline"></ion-icon>
+          LOG OUT
+        </button>
+      </div>
+    </ion-footer>
+  </ion-menu>

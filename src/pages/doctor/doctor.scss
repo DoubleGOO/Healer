@@ -1,0 +1,122 @@
+page-doctor {
+  ion-toolbar {
+    ion-title {
+      width:100%;
+      position: absolute;
+      top:30%;
+      text-align: center;
+    }
+  }
+  .card-md {
+    border-radius: 6px;
+  }
+
+  .label-md {
+    margin: 0 !important;
+  }
+
+  .item-md {
+    padding-left: 6px;
+}
+//卡片的CSS
+  ion-card{
+    width:95% !important;
+    padding:3%;
+    display: flex;
+
+    .leftPart{
+      width:25%;
+      img{
+        max-width: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    .middlePart{
+      width:60%;
+      padding:0 5%;
+      .mTopPart{
+        width:100%;
+        height:38%;
+        font-size: 20px;
+      }
+      .mMiddlePart{
+        margin:4% 0;
+        width:100%;
+        height:24%;
+        font-size: 14px;
+        color:#969696;
+      }
+      .mbottomPart{
+        width:100%;
+        height:38%;
+        font-size: 15px;
+        color:#717171;
+      }
+    }
+
+    .rightPart{
+      flex:1;
+      font-size: 16px;
+      .rTopPart{
+        width:100%;
+        height:40%;
+        float:right;
+        color:#4669D4;
+      }
+      .rBottomPart{
+        height: 60%;
+        margin-top: 55%;
+        float: right;
+      }
+    }
+  }
+
+  ion-item-options{
+    button{
+      background: -webkit-linear-gradient(left top, rgb(255, 126, 126) , rgb(255, 20, 20)) !important;
+      ion-icon{
+        margin-top:10%;
+        font-size:22px;
+      }
+    }
+  }
+//左滑动删除按钮
+  .list-md ion-item-options .button {
+    height: 83%;
+    position: relative;
+    top: 9.5%;
+    left: 11%;
+    border-radius: 20%;
+    width: 30%;
+    span{
+      margin-left: -20%;
+      margin-top:10%;
+    }
+  }
+  //去掉划出按钮底下的线
+  .list-md ion-item-options {
+    /* border-bottom: 1px solid #dedede; */
+    border-bottom:0px !important;
+  }
+  //fab
+  .fab-md {
+    color:#969696;
+    background: #fff;
+  }
+  .fab{
+    border: solid 1px #f1f1f1;
+    .fab ion-icon {
+      color: #969696;
+    }
+  }
+
+  ion-fab-list[side=left] {
+    margin: 0 55px;
+  }
+
+  ion-fab-list[side=left] .fab-in-list, ion-fab-list[side=right] .fab-in-list {
+    margin: 0 5px;
+  }
+
+}

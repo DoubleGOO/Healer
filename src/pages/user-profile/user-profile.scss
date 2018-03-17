@@ -1,0 +1,92 @@
+page-user-profile {
+  .userAvatar {
+    margin: 6% 0 0 0;
+    border-radius: 100%;
+    width: 100%;
+    text-align: center;
+    img {
+      width: 30%;
+    }
+  }
+  .myname {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin:2% 0 6% 0;
+  }
+  ion-grid {
+    width: 90% !important;
+    padding: 2% !important;
+    // box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.60), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 15px 1px rgb(230, 230, 230);
+    border-radius: 5%;
+    ion-row {
+      ion-col {
+        line-height: 30px;
+        .item {
+          margin-left:8%;
+          font-size: 14px;
+          color: #6e6e6e;
+        }
+        .detail {
+          margin-left:8%;
+          .data {
+            font-size: 18px;
+          }
+          .symbol {
+            font-size: 13px;
+            color: #969696;
+          }
+        }
+      } //画线
+      .col1 {
+        border-right: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+      }
+      .col2 {
+        border-right: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+      }
+      .col3 {
+        border-bottom: 1px solid #e4e4e4;
+      }
+      .col4 {
+        border-right: 1px solid #e4e4e4;
+      }
+      .col5 {
+        border-right: 1px solid #e4e4e4;
+      }
+    }
+  }
+  ion-buttons {
+    width: 100%;
+    padding: 5%;
+    margin-left:-0.5% !important;
+    button {
+      box-shadow: 0 0 10px 1px rgb(230, 230, 230) !important;
+      background: #fff !important;
+      margin:2.5% 0 !important;
+      width: 100%;
+      margin: 5% 0;
+      display: flex;
+      .leftPart {
+        font-size: 26px;
+        width: 5%;
+        float: left;
+        color:#4b69e7;
+      }
+      .middlePart {
+        margin-left: -30%;
+        color:#686868;
+        flex: 1;
+      }
+      .rightPart {
+        font-size: 24px;
+        color:#cacaca;
+        width: 5%;
+        float: right;
+      }
+    }
+  }
+}
+

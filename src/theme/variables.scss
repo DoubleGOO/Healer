@@ -1,0 +1,213 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+
+
+
+/*以下部分为tab的CSS*/
+a#tab-t0-2 .tab-button-icon{
+  border-radius: 100%;
+  border:solid 1px #EBEBEB;
+  color:#222;
+  background: -webkit-linear-gradient(left top, #4d68EB , #819ff5);
+  position: relative;
+  top: -9px;
+  width: 50px;
+  height: 50px;
+  font-size: 43px !important;
+}
+
+a#tab-t0-2 .tab-button-icon::before{
+  position: relative;
+  top: 2px;
+}
+
+.tabs-md .tab-button[aria-selected=false] .tab-button-icon{
+  background:#f8f8f8 !important;
+}
+
+.tabs-md .tab-button-icon{
+  font-size:30px !important;
+}
+
+.tabs-md .tabbar {
+  height: 40px;
+}
+
+.tabs-md .tab-button {
+  min-height: 6.8rem !important;
+}
+
+/*以下部分为菜单的CSS*/
+ion-menu{
+  ion-content{
+    .menu-header{
+      height:28%;
+      .user-avatar {
+        padding-top:11%;
+        padding-left:8%;
+      }
+      .personData{
+        position: absolute;
+        top:8%;
+        left:40%;
+        line-height: 30px;
+        margin-right:7%;
+        .myname{
+          float:right;
+          font-size:20px;
+          color:black;
+        }
+        .balance{
+          float:right;
+          font-size:14px;
+          color:#969696
+        }
+
+      }
+      .menu-list{
+        padding-top:7%;
+        padding-left: 5%;
+        height: 64%;
+      }
+    }
+  }
+  ion-footer{
+    height:8%;
+    display: flex;
+    .bottomLeft{
+      width:50%;
+      button{
+        width:100%;
+        ion-icon{
+          font-size: 30px;
+          margin-right:10%;
+        }
+      }
+    }
+    .bottomRight{
+      flex:1;
+      button{
+        width:100%;
+        ion-icon{
+          font-size: 30px;
+          margin-right:10%;
+        }
+      }
+    }
+  }
+}
+
+//toolbar和按钮的渐变色 字体白色
+.toolbar-background-md {
+  background: -webkit-linear-gradient(left top, #4d68EB , #819ff5) !important;
+}
+
+.mycolor{
+  background: -webkit-linear-gradient(left top, rgb(82, 107, 233) , #819ff5) !important;
+  box-shadow: 0 20px 30px -20px rgb(53, 78, 204) !important
+}
+
+.mycolorGray{
+  background: -webkit-linear-gradient(left top, #6b6b6b , #929292) !important;
+  box-shadow:  0 20px 30px -20px #6E6E6E !important;
+}
+
+.toolbar-title-md {
+  color: #fff !important;
+}
+
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+  /* color: #424242; */
+  color: #fff !important;
+}
+
+ion-toolbar{
+  box-shadow: 0 23px 30px -20px rgb(53, 78, 204) !important;
+}

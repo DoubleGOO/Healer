@@ -1,0 +1,45 @@
+// ion-label[fixed]{
+//   flex: 0 0 20px;
+//   width: 20px;
+//   min-width: 20px;
+//   max-width: 200px;
+// }
+page-login {
+  height:100%;
+  ion-list {
+    padding-left:2%;
+    padding-right:6%;
+    ion-item {
+      ion-label {
+        color: #959595;
+      }
+    }
+  }
+  .title {
+    height: 33%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 25%
+  }
+  .buttonPart {
+    width: 100%;
+    text-align: center;
+    button {
+      font-size: 18px;
+      margin-top: 4%;
+      margin-bottom: 6%;
+      width: 86%;
+    }
+  }
+  .bottomPart {
+    margin-top: 15%;
+    width: 100%;
+    text-align: center;
+    color: #959595;
+    a {
+      text-decoration: none;
+      color: #4D65D7;
+    }
+  }
+}
+

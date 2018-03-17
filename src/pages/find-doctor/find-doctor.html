@@ -1,0 +1,83 @@
+<!--
+  Generated template for the FindDoctorPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Find Doctor</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div class='tip'>
+      <div>FEELING TIRED?</div>
+      <div>FIND A DOCTOR.</div>
+    </div>
+    <ion-list>
+
+        <ion-item>
+          <ion-label>Specialist Doctor</ion-label>
+          <!-- 后期可用  [(ngModel)]="os" -->
+          <ion-select  >
+            <ion-option>Bedlam</ion-option>
+            <ion-option>Moorfields Eye Hospital</ion-option>
+            <ion-option>Pediatric Hospital</ion-option>
+            <ion-option>Women’s Hospital </ion-option>
+            <ion-option>Veterans Hospita</ion-option>
+            <ion-option>Man's Hospital</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Current Location</ion-label>
+          <ion-select >
+            <ion-option>Alabama</ion-option>
+            <ion-option>Alaska</ion-option>
+            <ion-option>Connecticut</ion-option>
+            <ion-option>Hawaii</ion-option>
+            <ion-option>Louisiana</ion-option>
+            <ion-option>Massachusetts</ion-option>
+            <ion-option>Missour</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Date</ion-label>
+          <ion-select [(ngModel)]="date.month">
+              <ion-option *ngFor='let item of monthList'>
+                  {{item}}
+              </ion-option>
+          </ion-select>
+
+          <ion-select [(ngModel)]="date.day">
+              <ion-option *ngFor='let item of dayList'>
+                {{item}}
+              </ion-option>
+          </ion-select>
+        </ion-item>
+
+          <ion-item>
+              <ion-label>Gerder</ion-label>
+              <ion-select submitText="Okay" cancelText="Nah">
+                <ion-option>balabala</ion-option>
+                <ion-option>guajiguaji</ion-option>
+                <ion-option>pucidaci</ion-option>
+                <ion-option>xiliguala</ion-option>
+                <ion-option>hahahahaa</ion-option>
+              </ion-select>
+          </ion-item>
+
+      </ion-list>
+
+      <div class='buttonPart'>
+        <button ion-button class='submit mycolor' round>
+          FIND NOW
+        </button>
+      </div>
+
+</ion-content>
