@@ -7,11 +7,20 @@
 page-login {
   height:100%;
   ion-list {
-    padding-left:2%;
-    padding-right:6%;
+    padding-left:4%;
+    padding-right:8%;
     ion-item {
       ion-label {
         color: #959595;
+        ion-icon{
+          font-size:26px;
+        }
+      }
+      span{
+        button{
+          height:20px !important;
+          background: #DEDEDE!important;
+        }
       }
     }
   }

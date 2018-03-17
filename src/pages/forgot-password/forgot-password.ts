@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { RegisterPage } from '../register/register';
+
 /**
- * Generated class for the FindHospitalPage page.
+ * Generated class for the ForgotPasswordPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,22 +12,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-find-hospital',
-  templateUrl: 'find-hospital.html',
+  selector: 'page-forgot-password',
+  templateUrl: 'forgot-password.html',
 })
-export class FindHospitalPage {
+export class ForgotPasswordPage {
 
-  public event = {
-    month: '2018-03-17',
-    timeStarts: '07:43',
-    timeEnds: '2018-03-17'
-  }
+  public RegisterPage = RegisterPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FindHospitalPage');
+    console.log('ionViewDidLoad ForgotPasswordPage');
   }
 
 }

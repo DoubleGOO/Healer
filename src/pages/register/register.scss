@@ -6,9 +6,12 @@
 // }
 page-register {
   height:100%;
+  ion-icon{
+    font-size:26px;
+  }
   ion-list {
-    padding-left:2%;
-    padding-right:6%;
+    padding-left:4%;
+    padding-right:8%;
   }
   .title {
     height: 33%;

@@ -47,18 +47,8 @@
         </ion-item>
 
         <ion-item>
-          <ion-label>Date</ion-label>
-          <ion-select [(ngModel)]="date.month">
-              <ion-option *ngFor='let item of monthList'>
-                  {{item}}
-              </ion-option>
-          </ion-select>
-
-          <ion-select [(ngModel)]="date.day">
-              <ion-option *ngFor='let item of dayList'>
-                {{item}}
-              </ion-option>
-          </ion-select>
+            <ion-label>Start Date</ion-label>
+            <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
         </ion-item>
 
           <ion-item>

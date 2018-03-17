@@ -95,7 +95,7 @@ a#tab-t0-2 .tab-button-icon{
   border-radius: 100%;
   border:solid 1px #EBEBEB;
   color:#222;
-  background: -webkit-linear-gradient(left top, #4d68EB , #819ff5);
+  background: -webkit-linear-gradient(left top, rgb(56, 89, 255) , #819ff5);
   position: relative;
   top: -9px;
   width: 50px;
@@ -191,12 +191,10 @@ ion-menu{
 
 .mycolor{
   background: -webkit-linear-gradient(left top, rgb(82, 107, 233) , #819ff5) !important;
-  box-shadow: 0 20px 30px -20px rgb(53, 78, 204) !important
 }
 
 .mycolorGray{
   background: -webkit-linear-gradient(left top, #6b6b6b , #929292) !important;
-  box-shadow:  0 20px 30px -20px #6E6E6E !important;
 }
 
 .toolbar-title-md {
@@ -211,3 +209,24 @@ ion-menu{
 ion-toolbar{
   box-shadow: 0 23px 30px -20px rgb(53, 78, 204) !important;
 }
+
+/*轮转效果*/
+.picker-md .picker-wrapper {
+  height: 100% !important;
+}
+.picker-md .picker-columns {
+  height: 80% !important;
+  margin-top: 20% !important;
+}
+.picker-md .picker-opt {
+  font-size: 30px !important;
+  margin-top: 100% !important;
+  max-width: 80px !important;
+}
+
+.picker-md .picker-col {
+  padding: 0 !important;
+  max-width: 100px !important;
+}
+
+

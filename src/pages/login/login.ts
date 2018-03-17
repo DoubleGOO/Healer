@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { ToastController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
+import { ForgotPasswordPage } from '../forgot-password/forgot-password';
 
 /**
  * Generated class for the LoginPage page.
@@ -18,6 +19,8 @@ import { RegisterPage } from '../register/register';
 })
 export class LoginPage {
 
+  public ForgotPasswordPage = ForgotPasswordPage;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,public toastCtrl: ToastController) {
   }
 
@@ -25,14 +28,14 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  showToastWithCloseButton() {
-    const toast = this.toastCtrl.create({
-      message: "If you check this box, your password will be saved on the device. Do not use it on public devices or on other people's devices.",
-      showCloseButton: true,
-      closeButtonText: 'OK'
-    });
-    toast.present();
-  }
+  // showToastWithCloseButton() {
+  //   const toast = this.toastCtrl.create({
+  //     message: "If you check this box, your password will be saved on the device. Do not use it on public devices or on other people's devices.",
+  //     showCloseButton: true,
+  //     closeButtonText: 'OK'
+  //   });
+  //   toast.present();
+  // }
 
   goRegisterPage(){
     this.navCtrl.push(RegisterPage);

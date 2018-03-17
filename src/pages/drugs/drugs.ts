@@ -15,11 +15,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DrugsPage {
 
+  public event = {
+    month: '2018-03-17',
+    timeStarts: '07:43',
+    timeEnds: '2018-03-17'
+  }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DrugsPage');
+    document.getElementById('button1').click();
   }
-
+  add(){
+    alert('1');
+  }
+  delete(){
+    this.navCtrl.push(DrugsPage);
+  }
 }
+//第一页选性别  第二页选体重（单栏） 在第二页最下方加一个width100%的item  点击触发  触发的图标可以在item上面相对定位下去

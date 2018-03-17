@@ -14,6 +14,7 @@ import { DoctorPage } from '../pages/doctor/doctor';
 import { DrugsPage } from '../pages/drugs/drugs';
 import { UserProfilePage } from '../pages/user-profile/user-profile';
 import { TestIndicatorsPage } from '../pages/test-indicators/test-indicators';
+import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,7 +33,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DoctorPage,
     DrugsPage,
     UserProfilePage,
-    TestIndicatorsPage
+    TestIndicatorsPage,
+    ForgotPasswordPage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DoctorPage,
     DrugsPage,
     UserProfilePage,
-    TestIndicatorsPage
+    TestIndicatorsPage,
+    ForgotPasswordPage
   ],
   providers: [
     StatusBar,
