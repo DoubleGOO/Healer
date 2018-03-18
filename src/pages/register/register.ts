@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { RegisterNamePage } from '../register-name/register-name';
 
 import { LoginPage } from '../login/login';
 
@@ -16,6 +17,8 @@ import { LoginPage } from '../login/login';
   templateUrl: 'register.html',
 })
 export class RegisterPage {
+
+  public RegisterNamePage = RegisterNamePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

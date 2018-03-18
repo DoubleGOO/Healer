@@ -1,0 +1,61 @@
+page-register-info {
+  //设置toolbar背景色以及没有阴影 以及返回图标的颜色
+  .toolbar-background-md {
+    background: #fff !important;
+  }
+
+  .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+    content: none !important;
+  }
+
+  ion-icon{
+    color:#969696;
+  }
+/****************************************/
+  ion-navbar{
+    span{
+      font-size: 18px;
+      margin-right: 5%;
+      color:#5268df;
+      float:right;
+    }
+  }
+
+  .input {
+    height:50%;
+    margin:0 8%;
+    padding:1% 2%;
+    box-shadow: 0 0 10px 1px rgb(230, 230, 230) !important;
+    ion-item{
+      height:25% !important;
+      border-radius: 2%;
+      margin:0% 0;
+      height:20%;
+    }
+  }
+  .title {
+    height: 26%;
+    text-align: center;
+    padding: 4% 6% 0 6%;
+    .title1{
+      line-height: 45px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .title2{
+      line-height: 25px;
+      font-size: 16px;
+      color:#6A6A6A;
+    }
+  }
+  .buttonPart {
+    margin-top:10%;
+    width: 100%;
+    text-align: center;
+    button {
+      font-size: 18px;
+      width: 86%;
+    }
+  }
+
+}

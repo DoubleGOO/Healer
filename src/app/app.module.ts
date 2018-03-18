@@ -1,5 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MultiPickerModule } from 'ion-multi-picker';
+
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -15,6 +17,9 @@ import { DrugsPage } from '../pages/drugs/drugs';
 import { UserProfilePage } from '../pages/user-profile/user-profile';
 import { TestIndicatorsPage } from '../pages/test-indicators/test-indicators';
 import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
+import { RegisterInfoPage } from '../pages/register-info/register-info';
+import { RegisterNamePage } from '../pages/register-name/register-name';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,13 +39,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DrugsPage,
     UserProfilePage,
     TestIndicatorsPage,
-    ForgotPasswordPage
+    ForgotPasswordPage,
+    RegisterInfoPage,
+    RegisterNamePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp,{
       tabsHideOnSubPages: 'true', //隐藏全部子页面 tabs
-    })
+    }),
+    MultiPickerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -57,7 +65,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DrugsPage,
     UserProfilePage,
     TestIndicatorsPage,
-    ForgotPasswordPage
+    ForgotPasswordPage,
+    RegisterInfoPage,
+    RegisterNamePage
   ],
   providers: [
     StatusBar,

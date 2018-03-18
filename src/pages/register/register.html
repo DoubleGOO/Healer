@@ -47,11 +47,11 @@
   </ion-list>
 
   <div class='buttonPart' >
-      <button ion-button round class='mycolor'>SIGN UP</button>
+      <button ion-button round class='mycolor' [(navPush)]='RegisterNamePage'>SIGN UP</button>
   </div>
 
   <div class='bottomPart' >
-      Don't have an account?<a href='#' (click)='goLoginPage()'> SIGN IN</a>
+      Don't have an account?<a href='#' (tap)='goLoginPage()'> SIGN IN</a>
   </div>
 
 </ion-content>

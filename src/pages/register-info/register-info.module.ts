@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
+import { RegisterInfoPage } from './register-info';
 import { MultiPickerModule } from 'ion-multi-picker';
-import { DrugsPage } from './drugs';
 
 @NgModule({
   declarations: [
-    DrugsPage,
+    RegisterInfoPage,
   ],
   imports: [
-    IonicPageModule.forChild(DrugsPage),
+    IonicPageModule.forChild(RegisterInfoPage),
     MultiPickerModule
   ],
 })
-export class DrugsPageModule {}
+export class RegisterInfoPageModule {}
