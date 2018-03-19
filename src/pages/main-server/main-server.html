@@ -114,13 +114,13 @@
     <!--footer： 菜单底部 -->
     <ion-footer>
       <div class='bottomLeft' >
-        <button ion-button clear>
+        <button ion-button clear menuClose [(navPush)]='SettingsPage'>
           <ion-icon name="ios-settings-outline"></ion-icon>
           SET
         </button>
       </div>
       <div class='bottomRight' >
-        <button ion-button clear menuClose (click)='exit()'>
+        <button ion-button clear menuClose (tap)='exit()'>
           <ion-icon name="ios-exit-outline"></ion-icon>
           LOG OUT
         </button>

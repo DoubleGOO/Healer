@@ -1,0 +1,84 @@
+page-settings {
+  //按钮的大小以及颜色
+  .checkbox-md .checkbox-icon {
+    border-radius:20px !important;
+    width: 28px;
+    height: 28px;
+
+  }
+  .checkbox-md .checkbox-checked{
+    background: -webkit-linear-gradient(left top, #4d68EB , #819ff5) !important;
+    .checkbox-inner {
+      left: 10px;
+      top: 7px;
+    }
+  }
+  //segement选择框
+  .segment-md .segment-button.activated, .segment-md .segment-button{
+      border-radius: 10%;
+  }
+  .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+      background: -webkit-linear-gradient(left top, #4d68EB , #819ff5) !important;
+      color:#ffffff;
+      border:0px !important;
+      box-shadow: 0 23px 20px -20px rgb(53, 78, 204) !important;
+  }
+
+  ion-segment {
+    margin:3% 4.5% 0% 4.5%;
+    height:10%!important ;
+    padding:1%;
+    width:91% !important;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 10%;
+  }
+//标题栏
+  ion-navbar{
+    box-shadow: 0 23px 30px -20px rgb(53, 78, 204) !important;
+  }
+/////////////////////////////////////////
+  .list1{
+    ion-item{
+      margin:5% !important;
+      width:90% !important;
+      box-shadow: 0 0 10px 1px rgb(230, 230, 230) !important;
+      img{
+        margin-left:-2% !important;
+        width:12%;
+      }
+      ion-label{
+        color:#696969;
+        padding-left:10% !important;
+        border-left:1px solid #ebebeb !important;
+      }
+    }
+  }
+
+  .list2{
+    ion-item{
+      height:90px;
+      margin:5% !important;
+      width:90% !important;
+      box-shadow: 0 0 10px 1px rgb(230, 230, 230) !important;
+      img{
+        width:6%;
+      }
+      ion-label{
+          margin-left:4%;
+          padding-left:10% !important;
+          border-left:1px solid #ebebeb !important;
+          .title1{
+            line-height:33px;
+            font-weight: bold;
+            font-size: 17px;
+          }
+          .title2{
+            line-height:20px;
+            font-size: 13px;
+            color:#696969;
+          }
+      }
+    }
+  }
+
+}

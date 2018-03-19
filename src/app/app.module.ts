@@ -19,6 +19,7 @@ import { TestIndicatorsPage } from '../pages/test-indicators/test-indicators';
 import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
 import { RegisterInfoPage } from '../pages/register-info/register-info';
 import { RegisterNamePage } from '../pages/register-name/register-name';
+import { SettingsPage } from '../pages/settings/settings';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -41,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TestIndicatorsPage,
     ForgotPasswordPage,
     RegisterInfoPage,
-    RegisterNamePage
+    RegisterNamePage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,
@@ -67,7 +69,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TestIndicatorsPage,
     ForgotPasswordPage,
     RegisterInfoPage,
-    RegisterNamePage
+    RegisterNamePage,
+    SettingsPage
   ],
   providers: [
     StatusBar,

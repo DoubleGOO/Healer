@@ -6,6 +6,7 @@ import { AppointmentPage } from '../appointment/appointment';
 import { FindHospitalPage } from '../find-hospital/find-hospital';
 import { FindDoctorPage } from '../find-doctor/find-doctor';
 import { LoginPage } from '../login/login';
+import { SettingsPage } from '../settings/settings';
 
 
 /**
@@ -26,6 +27,7 @@ export class MainServerPage {
   public AppointmentPage = AppointmentPage;
   public FindHospitalPage = FindHospitalPage;
   public FindDoctorPage = FindDoctorPage;
+  public SettingsPage = SettingsPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
