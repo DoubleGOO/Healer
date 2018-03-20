@@ -15,27 +15,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DrugsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  date = new Date(2018,2,22);
+  type: 'string'; // 'string' | 'js-date' | 'moment' | 'time' | 'object'
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DrugsPage');
   }
-  add(){
-    alert('1');
-  }
-  delete(){
-    this.navCtrl.push(DrugsPage);
-  }
-
-  public event = {
-    month: '2018-03-17',
-    timeStarts: '07:43',
-    timeEnds: '2018-03-17'
-  }
 
 }
-//第一页选性别  第二页选体重（单栏） 在第二页最下方加一个width100%的item  点击触发  触发的图标可以在item上面相对定位下去
-//http://blog.csdn.net/qq_28765817/article/details/70741333  用这个
+//日历插件说明http://www.ctolib.com/HsuanXyz-ion2-calendar.html
 
 

@@ -1,0 +1,115 @@
+page-appointment-make {
+  //日历整体背景颜色以及阴影
+  ion-calendar {
+    padding: 0;
+    background: -webkit-linear-gradient(left top, rgb(82, 107, 233), #819ff5) !important;
+    height: 43% !important;
+    box-shadow: 0 23px 30px -20px rgb(53, 78, 204) !important;
+  }
+  ion-calendar .title {
+    box-shadow: 0 23px 30px -20px rgb(53, 78, 204) !important;
+  } //去除前后箭头
+  ion-calendar .title .back {
+    display: none;
+  }
+  ion-calendar .title .forward {
+    display: none;
+  } //去除全局SCSS中toolbar效果
+  .toolbar {
+    box-shadow: none !important;
+  }
+  .toolbar-background-md {
+    background: transparent !important;
+  } //对日历中的字体进行设置
+  .button-inner {
+    font-size: 16px !important;
+    color: #fff;
+  }
+  ion-calendar-week .week-title li {
+    font-size: 10px !important;
+    color: #fff;
+  }
+  ion-calendar-month button.days-btn p {
+    font-size: 10px !important;
+    color: #fff;
+  }
+  ion-calendar-month .primary .days .on-selected,
+  ion-calendar-month .primary .startSelection button.days-btn,
+  ion-calendar-month .primary .endSelection button.days-btn {
+    color: #488aff !important;
+    background: -webkit-linear-gradient(left top, rgb(255, 255, 255), #c1d1ff) !important;
+  }
+  ion-calendar-month .primary .days .on-selected p {
+    color: #488aff !important;
+  }
+  ion-calendar-month .primary button.days-btn small,
+  ion-calendar-month .primary .days .marked p,
+  ion-calendar-month .primary .days .today p {
+    color: #2d6fe0;
+  }
+  ion-calendar-month .days {
+    height: 25px;
+  } //月份字体
+  ion-calendar-month-picker .month-packer-item button {
+    height:80%;
+    font-weight: bold;
+    color: #fff;
+  }
+  ion-calendar-month-picker .month-picker.primary .month-packer-item.this-month button {
+    border: 0px;
+    background: -webkit-linear-gradient(left top, rgb(255, 255, 255), #c1d1ff) !important;
+    color: #488aff !important;
+  }
+  ion-calendar-month-picker .month-packer-item {
+  } //返回按钮
+  .back {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    background: transparent;
+    ion-icon {
+      font-size: 23px;
+      color: #fff;
+    }
+  }
+  //上部分
+  .topPart{
+    position: fixed;
+    z-index: 9999;
+  }
+  //下部分
+  .bottomPart{
+
+    overflow-y: auto;
+    ion-list{
+      ion-item{
+        height:80px !important;
+        margin:4%;
+        width:92% !important;
+        box-shadow: 0 0 10px 1px rgb(230, 230, 230) !important;
+        .leftPart{
+          height:100%;
+          padding-left: 5%;
+          .title1{
+            margin:0 0 5% 0;
+            font-weight: bold;
+            font-size: 16px;
+          }
+          .title2{
+            color:#969696;
+            font-size:13px;
+          }
+        }
+        .rightPart{
+          width:20%;
+        }
+      }
+    }
+  }
+  //第一栏整体下移
+  ion-list[inset] {
+    border-width: 0;
+    margin-top:70% !important;
+  }
+}
+

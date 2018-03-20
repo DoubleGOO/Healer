@@ -14,10 +14,10 @@ page-settings {
     }
   }
   //segement选择框
-  .segment-md .segment-button.activated, .segment-md .segment-button{
+  .segment-md .segment-button{
       border-radius: 10%;
   }
-  .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+  .segment-md .segment-activated{
       background: -webkit-linear-gradient(left top, #4d68EB , #819ff5) !important;
       color:#ffffff;
       border:0px !important;

@@ -1,6 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MultiPickerModule } from 'ion-multi-picker';
+import { CalendarModule } from "ion2-calendar";
 
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -20,6 +21,7 @@ import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
 import { RegisterInfoPage } from '../pages/register-info/register-info';
 import { RegisterNamePage } from '../pages/register-name/register-name';
 import { SettingsPage } from '../pages/settings/settings';
+import { AppointmentMakePage } from '../pages/appointment-make/appointment-make';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -43,14 +45,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ForgotPasswordPage,
     RegisterInfoPage,
     RegisterNamePage,
-    SettingsPage
+    SettingsPage,
+    AppointmentMakePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp,{
       tabsHideOnSubPages: 'true', //隐藏全部子页面 tabs
     }),
-    MultiPickerModule
+    MultiPickerModule,
+    CalendarModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -70,7 +74,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ForgotPasswordPage,
     RegisterInfoPage,
     RegisterNamePage,
-    SettingsPage
+    SettingsPage,
+    AppointmentMakePage
   ],
   providers: [
     StatusBar,

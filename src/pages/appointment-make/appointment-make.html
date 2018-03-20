@@ -1,0 +1,40 @@
+<!--
+  Generated template for the AppointmentMakePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<!-- 日历插件文档https://github.com/HsuanXyz/ion2-calendar/blob/master/README-CN.md -->
+
+<ion-content>
+  <div class='topPart'>
+    <button class='back' (tap)='goBack()'>
+      <ion-icon name="md-arrow-back"></ion-icon>
+    </button>
+    <ion-calendar [(ngModel)]="date" (onChange)="onChange($event)" [type]="type" [format]="'YYYY-MM-DD'">
+    </ion-calendar>
+  </div>
+
+  <div class='bottomPart'>
+      <ion-list inset>
+          <ion-item *ngFor="let item  of doctorList" no-lines>
+              <div class='leftPart'>
+                <div class='title1'>{{item.info}}</div>
+                <div class='title2'>{{item.time}}</div>
+              </div>
+              <div class='rightPart' item-right>
+                <img src={{item.pic}} />
+              </div>
+
+          </ion-item>
+      </ion-list>
+
+      <ion-infinite-scroll (ionInfinite)="doInfinite($event) " threshold="0px">
+          <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more..."></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+
+  </div>
+
+  </ion-content>

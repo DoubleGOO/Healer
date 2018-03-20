@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AppointmentMakePage } from '../appointment-make/appointment-make';
 
 /**
  * Generated class for the AppointmentPage page.
@@ -14,6 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'appointment.html',
 })
 export class AppointmentPage {
+
+  public AppointmentMakePage = AppointmentMakePage;
   public event = {
     month: '2018-03-17',
     timeStarts: '07:43',
